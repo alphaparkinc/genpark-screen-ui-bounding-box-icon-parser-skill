@@ -1,0 +1,41 @@
+{
+  "name": "genpark-screen-ui-bounding-box-icon-parser-skill",
+  "version": "1.0.0",
+  "description": "GenPark AI Agent Skill - Screen UI bounding box and icon parser converting OS desktop and mobile screenshots into interactable Set-of-Mark (SoM) coordinates.",
+  "author": "genpark",
+  "category": "gui-agents",
+  "tags": [
+    "omniparser",
+    "set-of-mark",
+    "gui-agent",
+    "screen-parser",
+    "icon-detection"
+  ],
+  "inputs": {
+    "screenshot_width": {
+      "type": "integer"
+    },
+    "screenshot_height": {
+      "type": "integer"
+    },
+    "confidence_threshold": {
+      "type": "number"
+    }
+  },
+  "outputs": {
+    "screen_parse_id": {
+      "type": "string"
+    },
+    "interactive_elements_detected_count": {
+      "type": "integer"
+    },
+    "bounding_boxes_normalized_ast_url": {
+      "type": "string"
+    },
+    "annotated_som_screenshot_url": {
+      "type": "string"
+    }
+  },
+  "entrypoint": "client.py",
+  "example": "example_usage.py"
+}
